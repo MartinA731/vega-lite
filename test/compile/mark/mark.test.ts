@@ -689,7 +689,7 @@ describe('Mark', () => {
 
           const label = getLabelMark(model, 'anything');
           expect(label.transform[0].lineAnchor).toBe('end');
-          expect(label.encode).toBe(null);
+          expect(label.encode).toBeNull();
         });
 
         // TODO: more test for inherit
@@ -706,7 +706,7 @@ describe('Mark', () => {
 
           const label = getLabelMark(model, 'anything');
           expect(label.transform[0].lineAnchor).toBe('end');
-          expect(label.encode).toBe(null);
+          expect(label.encode).toBeNull();
         });
 
         // TODO: more test for inherit
@@ -723,7 +723,7 @@ describe('Mark', () => {
 
           const label = getLabelMark(model, 'anything');
           expect(label.transform[0].lineAnchor).toBe('end');
-          expect(label.encode).toBe(null);
+          expect(label.encode).toBeNull();
         });
 
         it(`should have correct default label-transform config for ${mark} (begin - vertical)`, () => {

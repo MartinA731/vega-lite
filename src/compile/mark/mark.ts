@@ -380,7 +380,11 @@ const LINE_ANCHOR_DEFAULTS = {
   }
 } as const;
 
-function getLabelInheritableChannels(mark: Mark, encoding: Encoding<string>, inherit?: LabelInheritableChannel | LabelInheritableChannel[]) {
+function getLabelInheritableChannels(
+  mark: Mark,
+  encoding: Encoding<string>,
+  inherit?: LabelInheritableChannel | LabelInheritableChannel[]
+) {
   if (!inherit) {
     inherit = mark === 'line' ? LABEL_INHERITABLE_CHANNEL : ['tooltip', 'href', 'url', 'description'];
   }
